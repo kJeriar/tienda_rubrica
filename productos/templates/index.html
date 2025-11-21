@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a Tienda Rubrica</h1>
+    <p class="lead">Gestiona productos, categorías y etiquetas con Django.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'lista_productos' %}">Ver Productos</a>
+</div>
+{% endblock %}

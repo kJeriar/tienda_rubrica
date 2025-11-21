@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Tienda Rubrica{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<nav class="topbar">
+  <div class="topbar-left">
+    <span class="logo">Tienda</span>
+  </div>
+
+  <div class="topbar-menu">
+    <a href="{% url 'lista_productos' %}" class="nav-link">Productos</a>
+    <a href="{% url 'lista_categorias' %}" class="nav-link">Categorías</a>
+    <a href="{% url 'lista_etiquetas' %}" class="nav-link">Etiquetas</a>
+  </div>
+
+  <div class="topbar-right">
+    <span class="user-label">👤 {{ request.user.username }}</span>
+    <a href="{% url 'logout' %}" class="logout-link">Salir</a>
+  </div>
+</nav>
+
+    <main class="container mt-4">
+        {% block content %}{% endblock %}
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
