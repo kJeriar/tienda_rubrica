@@ -307,3 +307,82 @@ form {
     color: #4b5563;
   }
 }
+/* ================= ESTILOS ESPECÍFICOS LOGIN ================= */
+
+/* Contenedor que centra todo vertical y horizontalmente */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Ocupa casi toda la altura de la pantalla */
+  padding: 1rem;
+}
+
+/* La tarjeta blanca del formulario */
+.login-card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px; /* Que no sea muy ancho */
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+/* Título del login */
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header h2 {
+  font-size: 1.8rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.login-header p {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Ajustes a los inputs dentro del login para que se vean más amplios */
+.login-card .form-control {
+  padding: 0.75rem 1rem; /* Más espacio interno */
+  background-color: #f9fafb;
+  margin-bottom: 1rem;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+/* Botón de ancho completo */
+.btn-block {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Enlace de ayuda (opcional) */
+.login-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.login-footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
